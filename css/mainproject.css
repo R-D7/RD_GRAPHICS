@@ -1,0 +1,146 @@
+/*starts genereal design*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#EEEEEE;
+    --black:#000000;
+    --light-black:#7D7D7D;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+section{
+    padding: 1rem 20%;
+}
+
+/*ends genereal design*/
+
+/* starts Header Design */
+.header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header .logo h3{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+    display: inline-block;
+}
+
+.header .menu a{
+    font-family: Poppins;
+    font-weight: 700;
+    size: 10px;
+    color: var(--light-black);
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+/* ends Header Design */
+.project{
+    background-color: var(--main-color);
+    margin-top: 20rem;
+}
+
+.project .text h1{
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: -6.5rem;
+    margin-bottom: 5rem;
+}
+
+.project .box h1{
+    font-family: Poppins;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 0rem;
+    margin-left: .5rem;
+    color: var(--main-color);
+}
+
+.project .box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.project .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box{
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    width: 100%;
+}
+
+.project .box-container .box .image{
+    overflow: hidden;
+}
+
+.project .box-container .box .image img:hover{
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.footer{
+    margin-top: -2rem;
+    background-color: var(--main-color);
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+}
+.footer .horizontal {
+    height: 100%;
+    width: 100%;
+}
+
+.footer .logo {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+    margin-top: -1.1rem;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+.footer .social-medias a{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.footer .social-medias{
+    margin-top: -3.4rem;
+    display: inline-block;
+    text-align: right;
+    padding-right: 2rem;
+}
+
